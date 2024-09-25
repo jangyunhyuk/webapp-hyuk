@@ -4,7 +4,6 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
 	<display-name>webapp-hyuk</display-name>
-	<!-- Welcome file list -->
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>/jsp/index.jsp</welcome-file>
@@ -17,5 +16,29 @@
 		<error-code>503</error-code>
 		<location>/error/503.html</location>
 	</error-page>
+	<servlet>
+
+		<servlet-name>HelloServlet</servlet-name>
+
+		<servlet-class>kr.ac.kku.cs.wp.hyuk.demo.HelloServlet</servlet-class>
+
+		<init-param>
+
+			<param-name>greeting</param-name>
+
+			<param-value>Hello, World from ServletConfig!</param-value>
+
+		</init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+
+		<servlet-name>HelloServlet</servlet-name>
+
+		<url-pattern>/HelloServlet</url-pattern>
+
+	</servlet-mapping>
+
+
 </web-app>
- 
