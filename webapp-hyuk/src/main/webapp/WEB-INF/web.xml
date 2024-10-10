@@ -136,4 +136,10 @@
     <servlet-name>Account</servlet-name>
     <url-pattern>/Account</url-pattern>
   </servlet-mapping>
+  <jsp-config>
+  	<taglib>
+  		<taglib-uri>kr.ac.kku.cs.wp.hyuk.tools.tags.custom</taglib-uri>
+  		<taglib-location>/WEB-INF/tlds/custom.tld</taglib-location>
+  	</taglib>
+  </jsp-config>
 </web-app>

@@ -26,6 +26,27 @@ public class Account implements Serializable{
 		// TODO Auto-generated method stub
 		
 	}
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	public String getId() {
+		return id;
+	}
+	public List<String> getRoles() {
+		return roles;
+	}
+	public String getName() {
+		return name;
+	}
+	public String getEmail() {
+		return email;
+	}
 
 
 	
